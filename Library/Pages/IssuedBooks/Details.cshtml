@@ -1,0 +1,55 @@
+﻿@page
+@model Library.Pages.IssuedBooks.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>IssuedBook</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IssuedBook.IssueDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IssuedBook.IssueDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IssuedBook.ReturnDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IssuedBook.ReturnDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IssuedBook.ReturnMark)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IssuedBook.ReturnMark)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IssuedBook.Book)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IssuedBook.Book.Author)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IssuedBook.Emp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IssuedBook.Emp.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IssuedBook.Read)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IssuedBook.Read.Address)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.IssuedBook.IssueId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

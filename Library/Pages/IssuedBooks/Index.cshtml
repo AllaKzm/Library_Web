@@ -1,0 +1,66 @@
+﻿@page
+@model Library.Pages.IssuedBooks.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].IssueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].ReturnDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].ReturnMark)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].Book)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].Emp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].Read)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.IssuedBook) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IssueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnMark)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Emp.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Read.Address)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.IssueId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.IssueId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.IssueId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

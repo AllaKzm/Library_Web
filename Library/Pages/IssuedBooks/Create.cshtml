@@ -1,0 +1,61 @@
+﻿@page
+@model Library.Pages.IssuedBooks.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>IssuedBook</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.IssueId" class="control-label"></label>
+                <input asp-for="IssuedBook.IssueId" class="form-control" />
+                <span asp-validation-for="IssuedBook.IssueId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.IssueDate" class="control-label"></label>
+                <input asp-for="IssuedBook.IssueDate" class="form-control" />
+                <span asp-validation-for="IssuedBook.IssueDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.ReturnDate" class="control-label"></label>
+                <input asp-for="IssuedBook.ReturnDate" class="form-control" />
+                <span asp-validation-for="IssuedBook.ReturnDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.ReturnMark" class="control-label"></label>
+                <input asp-for="IssuedBook.ReturnMark" class="form-control" />
+                <span asp-validation-for="IssuedBook.ReturnMark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.EmpId" class="control-label"></label>
+                <select asp-for="IssuedBook.EmpId" class ="form-control" asp-items="ViewBag.EmpId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.ReadId" class="control-label"></label>
+                <select asp-for="IssuedBook.ReadId" class ="form-control" asp-items="ViewBag.ReadId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IssuedBook.BookId" class="control-label"></label>
+                <select asp-for="IssuedBook.BookId" class ="form-control" asp-items="ViewBag.BookId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
