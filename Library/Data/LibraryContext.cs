@@ -34,7 +34,7 @@ namespace Library.Data
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 //optionsBuilder.UseSqlite("Data Source=C:\\Users\\1\\Desktop\\ИСП-21\\proectdb\\Library\\Library.db");
-                optionsBuilder.UseSqlite("Data Source= (localdb)\\mssqllocaldb; Database = Library.db; Integrated Security=True");
+                optionsBuilder.UseSqlite("Data Source= CHIK\\SQLEXPRESS; Database = Library.db; Integrated Security=True");
             }
         }
 

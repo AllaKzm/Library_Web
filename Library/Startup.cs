@@ -27,7 +27,7 @@ namespace Library
         {
             services.AddRazorPages();
            services.AddDbContext<LibraryContext>(options =>
-           options.UseSqlServer("Data Source = (localdb)\\mssqllocaldb; Initial Catalog=Library; Integrated Security=True"));
+           options.UseSqlServer("Data Source = CHIK\\SQLEXPRESS; Initial Catalog=Library; Integrated Security=True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

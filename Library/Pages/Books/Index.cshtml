@@ -5,10 +5,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Список книг</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Добавить книгу в список</a>
 </p>
 <table class="table">
     <thead>
@@ -44,10 +44,10 @@
                 @Html.DisplayFor(modelItem => item.PubYear)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Gen.Description)
+                @Html.DisplayFor(modelItem => item.Gen.GenTitle)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Pub.Address)
+                @Html.DisplayFor(modelItem => item.Pub.PublicistTitle)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.BookId">Edit</a> |

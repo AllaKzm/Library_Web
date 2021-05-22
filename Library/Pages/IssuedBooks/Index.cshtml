@@ -47,13 +47,13 @@
                 @Html.DisplayFor(modelItem => item.ReturnMark)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Book.Author)
+                @Html.DisplayFor(modelItem => item.Book.BookTitle)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Emp.Address)
+                @Html.DisplayFor(modelItem => item.Emp.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Read.Address)
+                @Html.DisplayFor(modelItem => item.Read.Name)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.IssueId">Edit</a> |
