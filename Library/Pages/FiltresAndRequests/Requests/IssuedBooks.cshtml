@@ -1,0 +1,58 @@
+﻿@page
+@model Library.Pages.FiltresAndRequests.Requests.Books_On_HandsModel
+@{
+}
+<h1>Книги на руках</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].Book)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].Emp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssuedBook[0].Read)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.IssuedBook)
+        {
+            <tr>
+                <td>
+                    @try
+                    {
+                        @Model.Book.First(r => r.BookId == item.BookId).BookTitle
+                    }
+                    catch
+                    {
+                        @Html.DisplayFor(modelItem => item.Book.BookId)
+                    }
+                </td>
+                <td>
+                    @try
+                    {
+                        @Model.Employee.First(r => r.EmpId == item.EmpId).Name
+                    }
+                    catch
+                    {
+                        @Html.DisplayFor(modelItem => item.Emp.EmpId)
+                    }
+                </td>
+                <td>
+                    @try
+                    {
+                        @Model.Reader.First(r => r.ReadId == item.ReadId).Name
+                    }
+                    catch
+                    {
+                        @Html.DisplayFor(modelItem => item.Read.ReadId)
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
