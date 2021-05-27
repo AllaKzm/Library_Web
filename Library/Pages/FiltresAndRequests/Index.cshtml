@@ -28,7 +28,7 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
             <div class="card-body">
                 <ul>
-                   
+
                     <li>
                         <a class="nav-link text-dark" asp-area="" asp-page="/FiltresAndRequests/Requests/IssuedBooks">Книги на руках</a>
                     </li>
@@ -36,3 +36,28 @@
             </div>
         </div>
     </div>
+    <div id="accordion">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Фильтры
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <ul>
+                    <li>
+                        <form>
+                            Отфильтровать книги по издателю:
+                            <select class="form-control-sm" asp-items="Model.SelPub" name="id" onclick="BtnFun('FilPub', this)">
+                                <option value="-1">не выбран</option>
+                            </select>
+                            <button asp-page="/FiltresAndRequests/Filtres/PubFil" class="btn btn-primary FilPub" disabled> Отфильтровать</button>
+                        </form>
+                    </li>
+                </ul>
+                </div>
+            </div>
+

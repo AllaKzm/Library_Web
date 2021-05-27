@@ -25,11 +25,11 @@ namespace Library.Models
         [Display(Name = "Код книги")] 
         public long BookId { get; set; }
 
-        [Display(Name = "Код книги")]
+        [Display(Name = "Книга")]
         public virtual Book Book { get; set; }
-        [Display(Name = "Код Сотрудника")]
+        [Display(Name = "Сотрудник")]
         public virtual Employee Emp { get; set; }
-        [Display(Name = "Код читателя")]
+        [Display(Name = "Читатель")]
         public virtual Reader Read { get; set; }
     }
 }

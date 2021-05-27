@@ -29,7 +29,7 @@
                     }
                     catch
                     {
-                        @Html.DisplayFor(modelItem => item.Book.BookId)
+                        @Html.DisplayFor(modelItem => item.Book.BookTitle)
                     }
                 </td>
                 <td>
@@ -39,7 +39,7 @@
                     }
                     catch
                     {
-                        @Html.DisplayFor(modelItem => item.Emp.EmpId)
+                        @Html.DisplayFor(modelItem => item.Emp.Name)
                     }
                 </td>
                 <td>
@@ -49,7 +49,7 @@
                     }
                     catch
                     {
-                        @Html.DisplayFor(modelItem => item.Read.ReadId)
+                        @Html.DisplayFor(modelItem => item.Read.Name)
                     }
                 </td>
             </tr>
