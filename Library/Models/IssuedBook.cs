@@ -18,11 +18,11 @@ namespace Library.Models
         public DateTime ReturnDate { get; set; }
         [Display(Name = "Отметка о возврате")] 
         public string ReturnMark { get; set; }
-        [Display(Name = "Код Сотрудника")] 
+        [Display(Name = "Сотрудник")] 
         public long EmpId { get; set; }
-        [Display(Name = "Код читателя")] 
+        [Display(Name = "Читатель")] 
         public long ReadId { get; set; }
-        [Display(Name = "Код книги")] 
+        [Display(Name = "Книга")] 
         public long BookId { get; set; }
 
         [Display(Name = "Книга")]

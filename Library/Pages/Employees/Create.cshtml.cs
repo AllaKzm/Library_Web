@@ -21,7 +21,7 @@ namespace Library.Pages.Employees
 
         public IActionResult OnGet()
         {
-        ViewData["PositionId"] = new SelectList(_context.Positions, "PositionId", "Demands");
+        ViewData["PositionId"] = new SelectList(_context.Positions, "PositionId", "PositionTitle");
             return Page();
         }
 

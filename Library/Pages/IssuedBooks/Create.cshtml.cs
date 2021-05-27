@@ -21,9 +21,9 @@ namespace Library.Pages.IssuedBooks
 
         public IActionResult OnGet()
         {
-        ViewData["BookId"] = new SelectList(_context.Books, "BookId", "Author");
-        ViewData["EmpId"] = new SelectList(_context.Employee, "EmpId", "Address");
-        ViewData["ReadId"] = new SelectList(_context.Reader, "ReadId", "Address");
+        ViewData["BookId"] = new SelectList(_context.Books, "BookId", "BookTitle");
+        ViewData["EmpId"] = new SelectList(_context.Employee, "EmpId", "Name");
+        ViewData["ReadId"] = new SelectList(_context.Reader, "ReadId", "Name");
             return Page();
         }
 

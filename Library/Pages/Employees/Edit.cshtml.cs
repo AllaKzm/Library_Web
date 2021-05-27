@@ -37,7 +37,7 @@ namespace Library.Pages.Employees
             {
                 return NotFound();
             }
-           ViewData["PositionId"] = new SelectList(_context.Positions, "PositionId", "Demands");
+           ViewData["PositionId"] = new SelectList(_context.Positions, "PositionId", "PositionTitle");
             return Page();
         }
 
