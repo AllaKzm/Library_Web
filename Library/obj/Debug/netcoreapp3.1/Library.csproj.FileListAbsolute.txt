@@ -409,6 +409,6 @@ C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Libr
 C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Library.pdb
 C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Library.genruntimeconfig.cache
 C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Razor\Pages\FiltresAndRequests\Index.cshtml.g.cs
-C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Razor\Pages\FiltresAndRequests\Requests\Request.cshtml.g.cs
 C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Razor\Pages\FiltresAndRequests\Requests\IssuedBooks.cshtml.g.cs
 C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Razor\Pages\FiltresAndRequests\Filtres\PubFil.cshtml.g.cs
+C:\Users\chikwork\Desktop\АЛЛА\ИндивидуальныйПроект\Library\obj\Debug\netcoreapp3.1\Razor\Pages\FiltresAndRequests\Filtres\ReadBooks.cshtml.g.cs

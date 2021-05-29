@@ -35,6 +35,7 @@
                 </ul>
             </div>
         </div>
+
     </div>
     <div id="accordion">
         <div class="card">
@@ -47,17 +48,31 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
-                  <ul>
-                    <li>
-                        <form>
-                            Отфильтровать книги по издателю:
-                            <select class="form-control-sm" asp-items="Model.SelPub" name="id" onclick="BtnFun('FilPub', this)">
-                                <option value="-1">не выбран</option>
-                            </select>
-                            <button asp-page="/FiltresAndRequests/Filtres/PubFil" class="btn btn-primary FilPub" disabled> Отфильтровать</button>
-                        </form>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <form>
+                                Отфильтровать книги по издателю:
+                                <select class="form-control-sm" asp-items="Model.SelPub" name="id" onclick="BtnFun('FilPub', this)">
+                                    <option value="-1">не выбран</option>
+                                </select>
+                                <button asp-page="/FiltresAndRequests/Filtres/PubFil" class="btn btn-primary FilPub" disabled> Отфильтровать</button>
+                            </form>
+                        </li>
+                    </ul>
                 </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <form>
+                                    Книги на руках у читателя::
+                                    <select class="form-control-sm" asp-items="Model.SelRead" name="id" onclick="BtnFun('FilPub', this)">
+                                        <option value="-1">не выбран</option>
+                                    </select>
+                                    <button asp-page="/FiltresAndRequests/Filtres/ReadBooks" class="btn btn-primary FilPub" disabled> Отфильтровать</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
             </div>
 

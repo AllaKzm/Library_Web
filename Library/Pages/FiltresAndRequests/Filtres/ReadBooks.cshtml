@@ -1,0 +1,45 @@
+﻿@page
+@model Library.Pages.FiltresAndRequests.Filtres.ReadBooksModel
+    @{
+    }
+    <h1>@Model.Reader.Name</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.IssuedBook[0].Book)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.IssuedBook[0].Emp)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.IssuedBook)
+            {
+                <tr>
+                    <td>
+                        @try
+                        {
+                            @Model.Book.First(r => r.BookId == item.BookId).BookTitle
+                        }
+                        catch
+                        {
+                            @Html.DisplayFor(modelItem => item.Book.BookId)
+                        }
+                    </td>
+                    <td>
+                        @try
+                        {
+                            @Model.Employee.First(r => r.EmpId == item.EmpId).Name
+                        }
+                        catch
+                        {
+                            @Html.DisplayFor(modelItem => item.Emp.EmpId)
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
