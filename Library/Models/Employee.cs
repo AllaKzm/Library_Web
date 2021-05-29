@@ -28,7 +28,7 @@ namespace Library.Models
         public string Phone { get; set; }
         [Display(Name = "Пасспортные данные")] 
         public string PassportData { get; set; }
-        [Display(Name = "Код должности")] 
+        [Display(Name = "Должность")] 
         public long PositionId { get; set; }
         
         [Display(Name = "Должность")]

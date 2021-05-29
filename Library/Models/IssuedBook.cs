@@ -18,7 +18,7 @@ namespace Library.Models
         public DateTime ReturnDate { get; set; }
         [Display(Name = "Отметка о возврате")] 
         public string ReturnMark { get; set; }
-        [Display(Name = "Сотрудник")] 
+        [Display(Name = "Сотрудник, выдавший книгу")] 
         public long EmpId { get; set; }
         [Display(Name = "Читатель")] 
         public long ReadId { get; set; }
@@ -27,7 +27,7 @@ namespace Library.Models
 
         [Display(Name = "Книга")]
         public virtual Book Book { get; set; }
-        [Display(Name = "Сотрудник")]
+        [Display(Name = "Сотрудник, выдавший книгу")]
         public virtual Employee Emp { get; set; }
         [Display(Name = "Читатель")]
         public virtual Reader Read { get; set; }

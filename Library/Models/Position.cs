@@ -20,7 +20,7 @@ namespace Library.Models
         public string PositionTitle { get; set; }
         [Display(Name = "Заработная плата")]
         public double Salary { get; set; }
-        [Display(Name = "Обязаности")]
+        [Display(Name = "Обязанности")]
         public string Duties { get; set; }
         [Display(Name = "Требования")]
         public string Demands { get; set; }

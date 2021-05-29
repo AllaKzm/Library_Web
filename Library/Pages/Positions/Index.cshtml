@@ -5,10 +5,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Должности</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Добавить запись</a>
 </p>
 <table class="table">
     <thead>
@@ -44,9 +44,9 @@
                 @Html.DisplayFor(modelItem => item.Demands)
             </td>
             <td>
-                <a asp-page="./Edit" asp-route-id="@item.PositionId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.PositionId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.PositionId">Delete</a>
+                <a asp-page="./Edit" asp-route-id="@item.PositionId">Редактировать</a> |
+                <a asp-page="./Details" asp-route-id="@item.PositionId">Детали</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PositionId">Удалить</a>
             </td>
         </tr>
 }
