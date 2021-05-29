@@ -50,12 +50,12 @@ namespace Library.Pages.FiltresAndRequests
             new SelectListItem
             {
                 Value = "False",
-                Text = "Íà ðóêàõ"
+                Text = "На руках"
             },
              new SelectListItem
                 {
                     Value = "True",
-                    Text = "Âîçâðàù¸ííûå"
+                    Text = "Возвращенные"
                 }};
             SelRead = _context.Reader.Select(p => new SelectListItem
             {
